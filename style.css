@@ -1,0 +1,395 @@
+/* ReDesign Rumpun Buket - dimuat setelah Bootstrap */
+:root {
+    --cream: #faf5ec;
+    --sage: #2f4a3a;
+    --sage-dk: #1d3025;
+    --clay: #c8644a;
+    --clay-dk: #a94e38;
+    --sand: #efe5d3;
+    --ink: #26302a;
+    --brand: #2f4a3a;
+    --on-brand: #fff;
+    --card: #fff;
+    --line: rgba(0, 0, 0, .08);
+    --nav-bg: rgba(250, 245, 236, .96);
+    --glow: #f3dccd;
+    --bs-body-bg: var(--cream);
+    --bs-body-color: var(--ink);
+    --bs-body-font-family: "DM Sans", system-ui, sans-serif
+}
+
+body {
+    background: var(--cream);
+    color: var(--ink);
+    overflow-x: hidden
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+    color: var(--ink);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -.01em
+}
+
+h1 {
+    font-size: clamp(2.6rem, 6vw, 4.6rem);
+    line-height: 1.02
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem)
+}
+
+em {
+    color: var(--clay)
+}
+
+.eyebrow {
+    font-size: .78rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--clay)
+}
+
+.bg-sand {
+    background: var(--sand) !important
+}
+
+.btn {
+    border-radius: 50rem;
+    padding: .7rem 1.5rem;
+    font-weight: 600
+}
+
+.btn-sm {
+    padding: .4rem 1rem
+}
+
+.btn-clay {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--clay);
+    --bs-btn-border-color: var(--clay);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--clay-dk);
+    --bs-btn-hover-border-color: var(--clay-dk)
+}
+
+.btn-outline-sage {
+    --bs-btn-color: var(--brand);
+    --bs-btn-border-color: var(--brand);
+    --bs-btn-hover-color: var(--on-brand);
+    --bs-btn-hover-bg: var(--brand);
+    --bs-btn-hover-border-color: var(--brand)
+}
+
+.navbar {
+    padding: 1rem 0;
+    transition: background .3s, padding .3s, box-shadow .3s
+}
+
+.navbar.scrolled,
+.navbar.solid {
+    background: var(--nav-bg);
+    backdrop-filter: blur(8px);
+    padding: .55rem 0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .08)
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    color: var(--brand) !important
+}
+
+.nav-link {
+    color: var(--ink) !important;
+    font-weight: 500
+}
+
+.nav-link.active {
+    color: var(--clay) !important;
+    font-weight: 700
+}
+
+@media(max-width:991.98px) {
+    .navbar-collapse {
+        background: var(--cream);
+        margin-top: .6rem;
+        padding: 1rem;
+        border-radius: 1rem
+    }
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 7rem 0 4rem;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at 85% 20%, var(--glow) 0, transparent 45%), var(--cream)
+}
+
+.hero-img {
+    position: relative
+}
+
+.hero-img img {
+    width: 100%;
+    height: min(70vh, 560px);
+    object-fit: cover;
+    border-radius: 12rem 12rem 1.5rem 1.5rem;
+    box-shadow: 0 30px 60px -25px rgba(47, 74, 58, .5)
+}
+
+.badge-float {
+    position: absolute;
+    left: -1rem;
+    bottom: 2rem;
+    background: var(--card);
+    border-radius: 1rem;
+    padding: .8rem 1.1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .15)
+}
+
+@media(max-width:575.98px) {
+    .badge-float {
+        left: .5rem
+    }
+
+    .hero {
+        padding-top: 6rem
+    }
+}
+
+.stat strong {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: var(--brand)
+}
+
+.strip {
+    background: var(--sage);
+    color: var(--cream);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: .9rem 0
+}
+
+.strip div {
+    display: inline-block;
+    animation: geser 28s linear infinite;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.4rem
+}
+
+.strip span {
+    margin: 0 1.5rem
+}
+
+.strip i {
+    color: var(--clay)
+}
+
+@keyframes geser {
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+.produk {
+    border: 0;
+    background: transparent
+}
+
+.produk .frame {
+    overflow: hidden;
+    border-radius: 1.25rem;
+    position: relative
+}
+
+.produk img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    transition: transform .6s
+}
+
+.produk:hover img {
+    transform: scale(1.06)
+}
+
+.produk .tag {
+    position: absolute;
+    top: .8rem;
+    left: .8rem;
+    background: var(--cream);
+    color: var(--brand);
+    font-size: .72rem;
+    font-weight: 700;
+    padding: .25rem .7rem;
+    border-radius: 50rem
+}
+
+.fitur {
+    background: var(--card);
+    border-radius: 1.25rem;
+    padding: 1.6rem;
+    height: 100%;
+    border: 1px solid var(--line);
+    transition: transform .25s
+}
+
+.fitur:hover {
+    transform: translateY(-6px)
+}
+
+.fitur i {
+    font-size: 1.8rem;
+    color: var(--clay)
+}
+
+.cta {
+    background: var(--sage);
+    color: var(--cream);
+    border-radius: 2rem;
+    padding: clamp(2rem, 6vw, 4rem)
+}
+
+.page-head {
+    padding: 9rem 0 4rem;
+    background: linear-gradient(180deg, var(--sand), var(--cream))
+}
+
+.langkah {
+    counter-increment: l;
+    position: relative;
+    padding-left: 4rem;
+    margin-bottom: 1.6rem
+}
+
+.langkah::before {
+    content: counter(l);
+    position: absolute;
+    left: 0;
+    top: -.2rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background: var(--clay);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    font-weight: 700
+}
+
+.table {
+    --bs-table-bg: transparent
+}
+
+.table thead th {
+    background: var(--sage);
+    color: #fff;
+    border: 0
+}
+
+.accordion {
+    --bs-accordion-bg: var(--card);
+    --bs-accordion-color: var(--ink);
+    --bs-accordion-btn-color: var(--ink);
+    --bs-accordion-border-color: var(--line);
+    --bs-accordion-active-bg: var(--sand);
+    --bs-accordion-active-color: var(--ink);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 .2rem rgba(200, 100, 74, .3)
+}
+
+.accordion-item {
+    border-radius: 1rem !important;
+    overflow: hidden;
+    margin-bottom: .7rem;
+    border: 1px solid var(--line)
+}
+
+.kontak i {
+    color: var(--clay);
+    font-size: 1.3rem;
+    margin-right: .8rem
+}
+
+footer {
+    background: var(--sage-dk);
+    color: #e9e2d2
+}
+
+footer a {
+    color: #e9e2d2;
+    text-decoration: none
+}
+
+footer a:hover {
+    color: var(--clay)
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .7s, transform .7s
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: none
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none
+    }
+
+    .strip div {
+        animation: none
+    }
+}
+
+/* mode gelap */
+[data-bs-theme="dark"] {
+    --cream: #141d18;
+    --sand: #1c2922;
+    --ink: #ece6d8;
+    --sage: #3d6350;
+    --brand: #bcd6c5;
+    --on-brand: #141d18;
+    --card: #1f2c25;
+    --line: rgba(255, 255, 255, .12);
+    --nav-bg: rgba(20, 29, 24, .94);
+    --glow: #2c3a2f;
+    --clay: #d97a5e;
+    --bs-body-bg: var(--cream);
+    --bs-body-color: var(--ink)
+}
+
+[data-bs-theme="dark"] .navbar-toggler {
+    color: var(--ink)
+}
+
+[data-bs-theme="dark"] footer {
+    background: #0e1511
+}
+
+[data-bs-theme="dark"] .produk img,
+[data-bs-theme="dark"] .hero-img img {
+    filter: brightness(.9)
+}
+
+#btnTema {
+    padding: .35rem .7rem;
+    line-height: 1
+}

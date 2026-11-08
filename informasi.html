@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Rumpun Buket: buket bunga segar, wisuda, dan bunga kering dari Tanggamus, Lampung">
+    <title>Informasi | Rumpun Buket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script>try {document.documentElement.setAttribute("data-bs-theme", localStorage.getItem("tema") || "light")} catch (e) { }</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top solid">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Rumpun <em>Buket</em></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Buka menu"><i
+                    class="bi bi-list fs-2"></i></button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="informasi.html">Informasi</a></li>
+                    <li class="nav-item"><button id="btnTema" class="btn btn-outline-sage btn-sm" type="button"
+                            aria-label="Ganti ke mode gelap"><i class="bi bi-moon-stars-fill"></i></button></li>
+                    <li class="nav-item"><a class="btn btn-clay btn-sm mt-2 mt-lg-0" href="https://wa.me/6285762950895"
+                            target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Pesan</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="page-head">
+        <div class="container">
+            <p class="eyebrow">Informasi</p>
+            <h1>Semua yang perlu Anda tahu</h1>
+            <p class="lead text-secondary col-lg-7">Cara memesan, ukuran dan harga, pertanyaan umum, serta cara
+                menghubungi kami.</p>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 reveal">
+                    <h2>Cara memesan</h2>
+                    <div style="counter-reset:l;margin-top:2rem">
+                        <div class="langkah">
+                            <h4 class="mb-1">Pilih buket</h4>
+                            <p class="text-secondary mb-0">Lihat koleksi di beranda dan tentukan ukuran.</p>
+                        </div>
+                        <div class="langkah">
+                            <h4 class="mb-1">Hubungi lewat WhatsApp</h4>
+                            <p class="text-secondary mb-0">Kirim nama, tanggal, alamat, dan kartu ucapan.</p>
+                        </div>
+                        <div class="langkah">
+                            <h4 class="mb-1">Konfirmasi dan bayar</h4>
+                            <p class="text-secondary mb-0">Kami konfirmasi total harga dan jadwal.</p>
+                        </div>
+                        <div class="langkah">
+                            <h4 class="mb-1">Terima buket</h4>
+                            <p class="text-secondary mb-0">Ambil di toko atau kami antar tepat waktu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 reveal" id="harga">
+                    <h2>Ukuran dan harga</h2>
+                    <p class="text-secondary">Harga dasar mengikuti buket pilihan, ukuran menambah biaya.</p>
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Ukuran</th>
+                                    <th>Tinggi</th>
+                                    <th>Isi</th>
+                                    <th>Tambahan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Small</td>
+                                    <td>25-30 cm</td>
+                                    <td>5-7 tangkai</td>
+                                    <td>Harga dasar</td>
+                                </tr>
+                                <tr>
+                                    <td>Medium</td>
+                                    <td>35-40 cm</td>
+                                    <td>10-12 tangkai</td>
+                                    <td>+ Rp 40.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Large</td>
+                                    <td>45-50 cm</td>
+                                    <td>18-20 tangkai</td>
+                                    <td>+ Rp 90.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row g-3 mt-2">
+                        <div class="col-sm-6">
+                            <div class="fitur"><i class="bi bi-flower3"></i>
+                                <h4 class="mt-2">Bunga segar</h4>
+                                <p class="small text-secondary mb-0">Rp 110.000 - 220.000</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="fitur"><i class="bi bi-stars"></i>
+                                <h4 class="mt-2">Bunga kering</h4>
+                                <p class="small text-secondary mb-0">Rp 115.000 - 145.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-sand">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 reveal">
+                    <h2 class="mb-4">Pertanyaan umum</h2>
+                    <div class="accordion" id="faq">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><button class="accordion-button fs-6 fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q0" style="font-family:inherit">Berapa
+                                    lama bunga segar bertahan?</button></h3>
+                            <div id="q0" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                                <div class="accordion-body text-secondary">Sekitar 5 sampai 7 hari jika batang dipotong
+                                    miring dan air diganti setiap hari.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><button class="accordion-button collapsed fs-6 fw-bold"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#q1"
+                                    style="font-family:inherit">Pesan mendadak bisa?</button></h3>
+                            <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                <div class="accordion-body text-secondary">Bisa untuk buket bunga kering di hari yang
+                                    sama. Bunga segar kami sarankan dipesan H-1.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><button class="accordion-button collapsed fs-6 fw-bold"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#q2"
+                                    style="font-family:inherit">Apakah bisa request warna dan isi?</button></h3>
+                            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                <div class="accordion-body text-secondary">Bisa. Tulis permintaan Anda lewat WhatsApp,
+                                    kami konfirmasi sebelum dirangkai.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header"><button class="accordion-button collapsed fs-6 fw-bold"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#q3"
+                                    style="font-family:inherit">Berapa ongkos kirim?</button></h3>
+                            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                <div class="accordion-body text-secondary">Rp 20.000, gratis untuk belanja minimal Rp
+                                    300.000.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal">
+                    <h2 class="mb-4">Hubungi kami</h2>
+                    <ul class="list-unstyled kontak mb-4">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill"></i>Jl. Batu Tegi, Air Naningan, Kab. Tanggamus,
+                            Lampung</li>
+                        <li class="mb-2"><i class="bi bi-whatsapp"></i>0857-6295-0895</li>
+                        <li><i class="bi bi-clock-fill"></i>Setiap hari, 08.00 - 20.00</li>
+                    </ul>
+                    <form id="formKontak" class="needs-validation" novalidate>
+                        <div class="mb-3"><label class="form-label" for="nama">Nama</label><input
+                                class="form-control rounded-pill px-3" id="nama" name="nama" minlength="3" required>
+                            <div class="invalid-feedback">Nama minimal 3 karakter.</div>
+                        </div>
+                        <div class="mb-3"><label class="form-label" for="pesan">Pesan</label><textarea
+                                class="form-control rounded-4 px-3" id="pesan" name="pesan" rows="3" minlength="10"
+                                required></textarea>
+                            <div class="invalid-feedback">Pesan minimal 10 karakter.</div>
+                        </div>
+                        <button class="btn btn-clay w-100" type="submit"><i class="bi bi-whatsapp me-1"></i>Kirim via
+                            WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h4>Rumpun Buket</h4>
+                    <p class="small opacity-75">Buket bunga segar, wisuda, dan bunga kering yang dirangkai tangan di
+                        Tanggamus, Lampung.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6>Halaman</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="informasi.html">Informasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h6>Ikuti Kami</h6><a class="fs-4 me-3" href="https://wa.me/6285762950895" aria-label="WhatsApp"><i
+                            class="bi bi-whatsapp"></i></a><a class="fs-4 me-3"
+                        href="https://www.instagram.com/diniiikhry" aria-label="Instagram"><i
+                            class="bi bi-instagram"></i></a><a class="fs-4" href="https://www.tiktok.com/@dinayyy2"
+                        aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+            <hr class="opacity-25">
+            <p class="text-center small mb-0 opacity-75">&copy; 2026 Rumpun Buket. Redesign oleh Dini Khoiriyah -
+                25312021. Foto: Unsplash.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
